@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  
+</head>
+<body>
+<main class="container">
+  <div class="logo">
+    <img src="images/logo.svg" alt="">
+  </div>
+  <div class="titleText">
+    <p>We are launching <span style="color: black; font-weight: 700;">soon!</span></p>
+  </div>
+  <dic class="subText">
+    <P>Subscribe and get notified</P>
+  </dic>
+  <div id="emailBox">
+    <div id="emailEntry">
+      <form name="form1" action="#"> 
+        <input type='text' class="textInput" id='text1' placeholder="Your email address...">
+    </div>
+    <div id="alertText">
+      <p>Please provide a valid email</p>
+      </div>
+    <button type="submit" class="notifyMe" onclick="ValidateEmail(document.form1.text1)">
+      <p>Notify Me</p>
+    </button>
+  </form>
+ 
+  </div>
+
+  <div class="pingImage">
+    <img src="images/illustration-dashboard.png" alt="Ping Product Illustration">
+  </div>
+  <div class="socials">
+    <div class="socialCircle">
+      <img src="images/facebook-svgrepo-com (1).svg" alt="facebook">
+    </div>
+    <div class="socialCircle">
+      <img src="images/twitter-svgrepo-com.svg" alt="twitter">
+    </div>
+    <div class="socialCircle">
+      <img src="images/instagram-svgrepo-com.svg" alt="instagram">
+    </div>
+  </div>
+  <footer>
+    <P>&copy; Copyright Ping. All rights reserved.</P>
+  </footer>
+</main>
+ 
+
+  
+
+  
+<script src="email-validation.js"></script>
+ 
+
+
+</body>
+</html>

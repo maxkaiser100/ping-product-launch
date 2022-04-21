@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    
+    font-size: 12px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+p {
+    margin: 0rem 0rem;
+    padding: 0rem;
+}
+
+.body {
+    display: flex;
+    min-height: 150vh;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 5rem;
+}
+.pingImage img {
+    width: 375px;
+    margin-top: 6rem;
+}
+
+.titleText {
+    font-weight: 300;
+    color: gray;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.subText {
+    font-weight: 300;
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#emailBox {
+    width: 350px;
+}
+
+#emailEntry {
+    width: 100%;
+    height: 4rem;
+    border: 1px hsl(223, 100%, 88%) solid;
+    border-radius: 30px;
+    margin-top: 2.5rem;
+}
+
+.textInput {
+    border: none;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    background: transparent;
+    font-size: 1.5rem;
+    color:black;
+}
+
+.textInput:focus{
+    outline: none;
+}
+
+.textInput::placeholder {
+    color:hsl(223, 100%, 88%);
+}
+
+.notifyMe {
+    width: 100%;
+    height: 4rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-size: 1.3rem;
+    box-shadow: 0px 10px 15px lightgray;
+    transition: .3s;
+}
+
+.notifyMe:hover {
+    background-color: hsla(223, 87%, 63%, 0.726);
+    transition: .3s;
+}
+
+#alertText {
+    text-align: left;
+    color: hsl(0, 93%, 68%);
+    padding-right: 11rem;
+    display: none;
+    font-style: italic;
+    padding-left: 3rem;
+    padding-top:.5rem;
+}
+
+.socials {
+    display: flex;
+}
+
+.socialCircle {
+    width: 3rem;
+    height: 3rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    border-radius: 100px;
+    border: 1px solid hsl(223, 100%, 88%);
+    display: flex;
+    justify-content: center;
+    padding: .5rem .5rem;
+}
+
+.socialCircle:hover {
+    background-color: hsl(223, 87%, 63%);
+}
+
+svg:hover socialCircle {
+    fill: white;
+}
+.socialCircle img {
+    width: 1.1rem;
+}
+
+footer {
+    color: rgb(158, 154, 154);
+}
+
+@media only screen and (min-width:480px) {
+    #emailBox {
+        display: flex;
+        align-items: center;
+        width: 60rem;
+    }
+
+    #emailEntry {
+        width: 100%;
+        height: 5rem;
+        margin-top: 0;
+    }
+    
+    .notifyMe {
+        width: 25rem;
+        height: 5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    .pingImage img {
+        width: 700px;
+        margin-top: 7rem;
+    }
+    
+    .titleText {
+        font-weight: 100;
+        color: gray;
+        font-size: 4rem;
+        margin-top: 3rem;
+    }
+    
+    .subText {
+        font-weight: 300;
+        color: black;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+
+    .textInput {
+        padding-top: 1.5rem;
+    }
+}
